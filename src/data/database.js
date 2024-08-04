@@ -9,7 +9,7 @@ const connectionConfig = {
   database: 'footballproject' // replace with your database name
 };
 
-async function getConnection() {
+async function getConnection() { //open the connection
   const connection = await mysql.createConnection(connectionConfig);
   return connection;
 }
